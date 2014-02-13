@@ -7,12 +7,15 @@
 //
 
 #import "WeaponsViewController.h"
+#import "BatalhaViewController.h"
 
 @interface WeaponsViewController ()
 
 @end
 
 @implementation WeaponsViewController
+
+int qtd = 0;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,8 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    wepon1player2 = arc4random() % 3;
-	wepon2player2 = arc4random() % 3;
+    wepon1player2 = arc4random() % 4;
+	wepon2player2 = arc4random() % 4;
     // Do any additional setup after loading the view.
 }
 
@@ -38,14 +41,57 @@
 }
 
 - (IBAction)espada:(id)sender {
+    if(qtd<2){
+        if(qtd==0)
+        wepon1player1 = 1;
+        else wepon2player1 =1;
+        qtd++;
+    }
+    if (qtd>1){
+        [self showBatalhaView];
+    }
 }
 
 - (IBAction)magia:(id)sender {
+    if(qtd<2){
+        if(qtd==0)
+            wepon1player1 = 2;
+        else wepon2player1 =2;
+        qtd++;
+    }
+    if (qtd>1){
+        [self showBatalhaView];
+    }
 }
 
 - (IBAction)arcoeflecha:(id)sender {
+    if(qtd<2){
+        if(qtd==0)
+            wepon1player1 = 3;
+        else wepon2player1 =3;
+        qtd++;
+    }
+    if (qtd>1){
+        [self showBatalhaView];
+    }
 }
 
 - (IBAction)machado:(id)sender {
+    if(qtd<2){
+        if(qtd==0)
+            wepon1player1 = 4;
+        else wepon2player1 =4;
+        qtd++;
+    }
+    if (qtd>1){
+        [self showBatalhaView];
+    }
 }
+- (void)showBatalhaView
+{
+    BatalhaViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"batalha"];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
+
 @end
