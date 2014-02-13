@@ -14,5 +14,11 @@
 #import "Magia.h"
 
 @interface WeaponsViewController : UIViewController
+{
+    int wepon1player1;
+    int wepon2player1;
+    int wepon1player2;
+    int wepon2player2;
+}
 
 @end

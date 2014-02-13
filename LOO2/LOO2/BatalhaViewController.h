@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Jogador.h"
+#import "CharactersViewController.h"
+#import "WeaponsViewController.h"
 @interface BatalhaViewController : UIViewController
 {
     Jogador *player1;
     Jogador *player2;
+    
+    
 }
 
 @end
