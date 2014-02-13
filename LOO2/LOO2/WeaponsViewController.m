@@ -26,7 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    wepon1player2 = arc4random() % 3;
+	wepon2player2 = arc4random() % 3;
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
