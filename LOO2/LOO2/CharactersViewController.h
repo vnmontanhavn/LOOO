@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CharactersViewController : UIViewController
 - (IBAction)btnElfo:(id)sender;
 - (IBAction)btnHumano:(id)sender;
 - (IBAction)btnOrc:(id)sender;

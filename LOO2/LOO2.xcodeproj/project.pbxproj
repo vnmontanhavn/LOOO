@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7524A42C18ACF04D00587FB3 /* WeaponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */; };
 		C8E9044818ACDF2100F3B887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044718ACDF2100F3B887 /* Foundation.framework */; };
 		C8E9044A18ACDF2100F3B887 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044918ACDF2100F3B887 /* CoreGraphics.framework */; };
 		C8E9044C18ACDF2100F3B887 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044B18ACDF2100F3B887 /* UIKit.framework */; };
@@ -14,7 +15,7 @@
 		C8E9045418ACDF2100F3B887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9045318ACDF2100F3B887 /* main.m */; };
 		C8E9045818ACDF2100F3B887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9045718ACDF2100F3B887 /* AppDelegate.m */; };
 		C8E9045B18ACDF2100F3B887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E9045918ACDF2100F3B887 /* Main.storyboard */; };
-		C8E9045E18ACDF2100F3B887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9045D18ACDF2100F3B887 /* ViewController.m */; };
+		C8E9045E18ACDF2100F3B887 /* CharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9045D18ACDF2100F3B887 /* CharactersViewController.m */; };
 		C8E9046018ACDF2100F3B887 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E9045F18ACDF2100F3B887 /* Images.xcassets */; };
 		C8E9046718ACDF2100F3B887 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9046618ACDF2100F3B887 /* XCTest.framework */; };
 		C8E9046818ACDF2100F3B887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044718ACDF2100F3B887 /* Foundation.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7524A42A18ACF04D00587FB3 /* WeaponsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponsViewController.h; sourceTree = "<group>"; };
+		7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponsViewController.m; sourceTree = "<group>"; };
 		C8E9044418ACDF2100F3B887 /* LOO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E9044718ACDF2100F3B887 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8E9044918ACDF2100F3B887 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +55,8 @@
 		C8E9045618ACDF2100F3B887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8E9045718ACDF2100F3B887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C8E9045A18ACDF2100F3B887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C8E9045C18ACDF2100F3B887 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C8E9045D18ACDF2100F3B887 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C8E9045C18ACDF2100F3B887 /* CharactersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharactersViewController.h; sourceTree = "<group>"; };
+		C8E9045D18ACDF2100F3B887 /* CharactersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharactersViewController.m; sourceTree = "<group>"; };
 		C8E9045F18ACDF2100F3B887 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C8E9046518ACDF2100F3B887 /* LOO2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOO2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E9046618ACDF2100F3B887 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -136,8 +139,10 @@
 				C8E9045618ACDF2100F3B887 /* AppDelegate.h */,
 				C8E9045718ACDF2100F3B887 /* AppDelegate.m */,
 				C8E9045918ACDF2100F3B887 /* Main.storyboard */,
-				C8E9045C18ACDF2100F3B887 /* ViewController.h */,
-				C8E9045D18ACDF2100F3B887 /* ViewController.m */,
+				7524A42A18ACF04D00587FB3 /* WeaponsViewController.h */,
+				7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */,
+				C8E9045C18ACDF2100F3B887 /* CharactersViewController.h */,
+				C8E9045D18ACDF2100F3B887 /* CharactersViewController.m */,
 				C8E9045F18ACDF2100F3B887 /* Images.xcassets */,
 				C8E9048B18ACE28C00F3B887 /* Jogador.h */,
 				C8E9048C18ACE28C00F3B887 /* Jogador.m */,
@@ -285,9 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8E9048718ACE26C00F3B887 /* Arma.m in Sources */,
+				7524A42C18ACF04D00587FB3 /* WeaponsViewController.m in Sources */,
 				C8E9048A18ACE26C00F3B887 /* Magia.m in Sources */,
 				C8E9049018ACE28C00F3B887 /* LeagueOfOrientedObject.m in Sources */,
-				C8E9045E18ACDF2100F3B887 /* ViewController.m in Sources */,
+				C8E9045E18ACDF2100F3B887 /* CharactersViewController.m in Sources */,
 				C8E9048618ACE26C00F3B887 /* ArcoeFlecha.m in Sources */,
 				C8E9048F18ACE28C00F3B887 /* Jogador.m in Sources */,
 				C8E9048918ACE26C00F3B887 /* Machado.m in Sources */,
@@ -502,6 +508,7 @@
 				C8E9047818ACDF2100F3B887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E9047918ACDF2100F3B887 /* Build configuration list for PBXNativeTarget "LOO2Tests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				C8E9047B18ACDF2100F3B887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
