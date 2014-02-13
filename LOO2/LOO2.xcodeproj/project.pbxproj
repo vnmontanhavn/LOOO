@@ -21,6 +21,13 @@
 		C8E9046918ACDF2100F3B887 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044B18ACDF2100F3B887 /* UIKit.framework */; };
 		C8E9047118ACDF2100F3B887 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8E9046F18ACDF2100F3B887 /* InfoPlist.strings */; };
 		C8E9047318ACDF2100F3B887 /* LOO2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9047218ACDF2100F3B887 /* LOO2Tests.m */; };
+		C8E9048618ACE26C00F3B887 /* ArcoeFlecha.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9047D18ACE26C00F3B887 /* ArcoeFlecha.m */; };
+		C8E9048718ACE26C00F3B887 /* Arma.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9047F18ACE26C00F3B887 /* Arma.m */; };
+		C8E9048818ACE26C00F3B887 /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048118ACE26C00F3B887 /* Espada.m */; };
+		C8E9048918ACE26C00F3B887 /* Machado.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048318ACE26C00F3B887 /* Machado.m */; };
+		C8E9048A18ACE26C00F3B887 /* Magia.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048518ACE26C00F3B887 /* Magia.m */; };
+		C8E9048F18ACE28C00F3B887 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048C18ACE28C00F3B887 /* Jogador.m */; };
+		C8E9049018ACE28C00F3B887 /* LeagueOfOrientedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048E18ACE28C00F3B887 /* LeagueOfOrientedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,20 @@
 		C8E9046E18ACDF2100F3B887 /* LOO2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LOO2Tests-Info.plist"; sourceTree = "<group>"; };
 		C8E9047018ACDF2100F3B887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8E9047218ACDF2100F3B887 /* LOO2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOO2Tests.m; sourceTree = "<group>"; };
+		C8E9047C18ACE26C00F3B887 /* ArcoeFlecha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcoeFlecha.h; sourceTree = "<group>"; };
+		C8E9047D18ACE26C00F3B887 /* ArcoeFlecha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcoeFlecha.m; sourceTree = "<group>"; };
+		C8E9047E18ACE26C00F3B887 /* Arma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arma.h; sourceTree = "<group>"; };
+		C8E9047F18ACE26C00F3B887 /* Arma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arma.m; sourceTree = "<group>"; };
+		C8E9048018ACE26C00F3B887 /* Espada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espada.h; sourceTree = "<group>"; };
+		C8E9048118ACE26C00F3B887 /* Espada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espada.m; sourceTree = "<group>"; };
+		C8E9048218ACE26C00F3B887 /* Machado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Machado.h; sourceTree = "<group>"; };
+		C8E9048318ACE26C00F3B887 /* Machado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Machado.m; sourceTree = "<group>"; };
+		C8E9048418ACE26C00F3B887 /* Magia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magia.h; sourceTree = "<group>"; };
+		C8E9048518ACE26C00F3B887 /* Magia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Magia.m; sourceTree = "<group>"; };
+		C8E9048B18ACE28C00F3B887 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		C8E9048C18ACE28C00F3B887 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		C8E9048D18ACE28C00F3B887 /* LeagueOfOrientedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueOfOrientedObject.h; sourceTree = "<group>"; };
+		C8E9048E18ACE28C00F3B887 /* LeagueOfOrientedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueOfOrientedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +139,20 @@
 				C8E9045C18ACDF2100F3B887 /* ViewController.h */,
 				C8E9045D18ACDF2100F3B887 /* ViewController.m */,
 				C8E9045F18ACDF2100F3B887 /* Images.xcassets */,
+				C8E9048B18ACE28C00F3B887 /* Jogador.h */,
+				C8E9048C18ACE28C00F3B887 /* Jogador.m */,
+				C8E9048D18ACE28C00F3B887 /* LeagueOfOrientedObject.h */,
+				C8E9048E18ACE28C00F3B887 /* LeagueOfOrientedObject.m */,
+				C8E9047C18ACE26C00F3B887 /* ArcoeFlecha.h */,
+				C8E9047D18ACE26C00F3B887 /* ArcoeFlecha.m */,
+				C8E9047E18ACE26C00F3B887 /* Arma.h */,
+				C8E9047F18ACE26C00F3B887 /* Arma.m */,
+				C8E9048018ACE26C00F3B887 /* Espada.h */,
+				C8E9048118ACE26C00F3B887 /* Espada.m */,
+				C8E9048218ACE26C00F3B887 /* Machado.h */,
+				C8E9048318ACE26C00F3B887 /* Machado.m */,
+				C8E9048418ACE26C00F3B887 /* Magia.h */,
+				C8E9048518ACE26C00F3B887 /* Magia.m */,
 				C8E9044E18ACDF2100F3B887 /* Supporting Files */,
 			);
 			path = LOO2;
@@ -249,9 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E9048718ACE26C00F3B887 /* Arma.m in Sources */,
+				C8E9048A18ACE26C00F3B887 /* Magia.m in Sources */,
+				C8E9049018ACE28C00F3B887 /* LeagueOfOrientedObject.m in Sources */,
 				C8E9045E18ACDF2100F3B887 /* ViewController.m in Sources */,
+				C8E9048618ACE26C00F3B887 /* ArcoeFlecha.m in Sources */,
+				C8E9048F18ACE28C00F3B887 /* Jogador.m in Sources */,
+				C8E9048918ACE26C00F3B887 /* Machado.m in Sources */,
 				C8E9045818ACDF2100F3B887 /* AppDelegate.m in Sources */,
 				C8E9045418ACDF2100F3B887 /* main.m in Sources */,
+				C8E9048818ACE26C00F3B887 /* Espada.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
