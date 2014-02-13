@@ -131,40 +131,43 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msH-W1-zou">
-                                <rect key="frame" x="20" y="118" width="52" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msH-W1-zou">
+                                <rect key="frame" x="20" y="78" width="160" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Espada">
+                                <state key="normal" image="espada">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="espada:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="Y25-Lw-Yx4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOG-Jy-mrm">
-                                <rect key="frame" x="206" y="118" width="94" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOG-Jy-mrm">
+                                <rect key="frame" x="160" y="326" width="166" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Arco e Flecha">
+                                <state key="normal" title="\" image="arco">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="arcoeflecha:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="Ahg-mA-suO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7f-7y-oUD">
-                                <rect key="frame" x="20" y="215" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7f-7y-oUD">
+                                <rect key="frame" x="20" y="321" width="160" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Magia">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Nxu-ue-Tnz"/>
+                                </constraints>
+                                <state key="normal" image="cajado">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="magia:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="jKP-2U-3hj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-qo-LZQ">
-                                <rect key="frame" x="206" y="215" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-qo-LZQ">
+                                <rect key="frame" x="160" y="78" width="160" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Machado">
+                                <state key="normal" image="machado">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -177,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKx-Nv-R5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="504" y="-44"/>
+            <point key="canvasLocation" x="611" y="-44"/>
         </scene>
         <!--Batalha View Controller-->
         <scene sceneID="rqD-eb-h3K">
@@ -257,14 +260,18 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bif-xl-NP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="-44"/>
+            <point key="canvasLocation" x="1073" y="-44"/>
         </scene>
     </scenes>
     <resources>
         <image name="anao" width="199" height="254"/>
+        <image name="arco" width="160" height="240"/>
         <image name="blue1" width="320" height="568"/>
+        <image name="cajado" width="160" height="240"/>
         <image name="elfo" width="160" height="240"/>
+        <image name="espada" width="160" height="240"/>
         <image name="humano" width="160" height="240"/>
+        <image name="machado" width="160" height="240"/>
         <image name="orc copy" width="160" height="240"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
