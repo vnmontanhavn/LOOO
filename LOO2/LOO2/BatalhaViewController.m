@@ -32,7 +32,59 @@
     [super viewDidLoad];
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
+    player1.raca = self.raceP1;
+    player2.raca = self.raceP2;
+    if (self.wep1P1==1) {
+        player1.armaPrimaria = [[Espada alloc] init];
+    }
+    else if (self.wep1P1==2) {
+        player1.armaPrimaria = [[Machado alloc]init];
+    }
+    else if (self.wep1P1==3) {
+        player1.armaPrimaria = [[ArcoeFlecha alloc]init];
+    }
+    else  {
+        player1.armaPrimaria = [[Magia alloc]init];
+    }
     
+    if (self.wep2P1==1) {
+        player1.armaSecundaria = [[Espada alloc] init];
+    }
+    else if (self.wep2P1==2) {
+        player1.armaSecundaria =[[Machado alloc]init];
+    }
+    else if (self.wep2P1==3) {
+        player1.armaSecundaria = [[ArcoeFlecha alloc]init];
+    }
+    else  {
+        player1.armaSecundaria = [[Magia alloc]init];
+    }
+    
+    if (self.wep1P2==1) {
+        player2.armaPrimaria = [[Espada alloc] init];
+    }
+    else if (self.wep1P2==2) {
+        player2.armaPrimaria =[[Machado alloc]init];
+    }
+    else if (self.wep1P2==3) {
+        player2.armaPrimaria = [[ArcoeFlecha alloc]init];
+    }
+    else  {
+        player2.armaPrimaria = [[Magia alloc]init];
+    }
+    
+    if (self.wep2P2==1) {
+        player2.armaSecundaria = [[Espada alloc] init];
+    }
+    else if (self.wep2P2==2) {
+        player2.armaSecundaria =[[Machado alloc]init];
+    }
+    else if (self.wep2P2==3) {
+        player2.armaSecundaria = [[ArcoeFlecha alloc]init];
+    }
+    else  {
+        player2.armaSecundaria = [[Magia alloc]init];
+    }
     
 	// Do any additional setup after loading the view.
 }

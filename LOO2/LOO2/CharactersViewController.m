@@ -33,22 +33,22 @@
 }
 
 - (IBAction)btnElfo:(id)sender {
-    raceplayer1 =1;
+    raceplayer1 =0;
     [self showWeaponsView];
 }
 
 - (IBAction)btnHumano:(id)sender {
-    raceplayer1 =2;
+    raceplayer1 =1;
     [self showWeaponsView];
 }
 
 - (IBAction)btnOrc:(id)sender {
-    raceplayer1 =3;
+    raceplayer1 =2;
     [self showWeaponsView];
 }
 
 - (IBAction)btnAnao:(id)sender {
-    raceplayer1 =4;
+    raceplayer1 =3;
     [self showWeaponsView];
 }
 

@@ -12,6 +12,7 @@
 #import "Espada.h"
 #import "Machado.h"
 #import "Magia.h"
+#import "ArcoeFlecha.h"
 
 @interface WeaponsViewController : UIViewController
 {
