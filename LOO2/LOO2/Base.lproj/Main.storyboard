@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Characters View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="characters" id="vXZ-lx-hvc" customClass="CharactersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RV6-n6-YlA"/>
                         <viewControllerLayoutGuide type="bottom" id="5b6-G0-KvF"/>
@@ -34,6 +34,9 @@
                                 <state key="normal" title="Elfo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnElfo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lLj-tJ-w0g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-0C-ekg">
                                 <rect key="frame" x="242" y="121" width="58" height="30"/>
@@ -41,6 +44,9 @@
                                 <state key="normal" title="Humano">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnHumano:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cxa-FS-oGN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usd-cL-mHd">
                                 <rect key="frame" x="20" y="210" width="30" height="30"/>
@@ -55,6 +61,9 @@
                                 <state key="normal" title="Anão">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnAnao:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mtd-Xb-KTf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-DK-YTF">
                                 <rect key="frame" x="20" y="210" width="30" height="30"/>
@@ -62,6 +71,9 @@
                                 <state key="normal" title="Orc">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnOrc:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n3j-U6-Ax3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -71,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="-44"/>
         </scene>
-        <!--View Controller-->
+        <!--Weapons View Controller-->
         <scene sceneID="Bou-mE-ovW">
             <objects>
-                <viewController id="o5w-Xc-YHu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weapons" id="o5w-Xc-YHu" customClass="WeaponsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1re-If-Sn7"/>
                         <viewControllerLayoutGuide type="bottom" id="W5T-y6-Rlo"/>

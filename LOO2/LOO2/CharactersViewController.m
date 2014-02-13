@@ -6,13 +6,14 @@
 //  Copyright (c) 2014 Vinicius Soares Lima. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CharactersViewController.h"
+#import "WeaponsViewController.h"
 
-@interface ViewController ()
+@interface CharactersViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CharactersViewController
 
 - (void)viewDidLoad
 {
@@ -27,12 +28,25 @@
 }
 
 - (IBAction)btnElfo:(id)sender {
+    [self showWeaponsView];
 }
+
 - (IBAction)btnHumano:(id)sender {
+    [self showWeaponsView];
 }
 
 - (IBAction)btnOrc:(id)sender {
+    [self showWeaponsView];
 }
+
 - (IBAction)btnAnao:(id)sender {
+    [self showWeaponsView];
 }
+
+- (void)showWeaponsView
+{
+    WeaponsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"weapons"];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
 @end
