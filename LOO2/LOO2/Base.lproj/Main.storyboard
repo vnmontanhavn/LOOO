@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="504" y="-44"/>
         </scene>
-        <!--View Controller-->
+        <!--Batalha View Controller-->
         <scene sceneID="rqD-eb-h3K">
             <objects>
-                <viewController id="yYT-Ax-lUm" sceneMemberID="viewController">
+                <viewController id="yYT-Ax-lUm" customClass="BatalhaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="INk-dP-AGg"/>
                         <viewControllerLayoutGuide type="bottom" id="zrI-B7-y46"/>

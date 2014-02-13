@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Jogador.h"
+#import "BatalhaViewController.h"
+
 
 @interface CharactersViewController : UIViewController
 - (IBAction)btnElfo:(id)sender;

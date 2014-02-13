@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BatalhaViewController.h"
+#import "Jogador.h"
+#import "Espada.h"
+#import "Machado.h"
+#import "Magia.h"
 
 @interface WeaponsViewController : UIViewController
 
