@@ -26,4 +26,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnElfo:(id)sender {
+}
+- (IBAction)btnHumano:(id)sender {
+}
+
+- (IBAction)btnOrc:(id)sender {
+}
+- (IBAction)btnAnao:(id)sender {
+}
 @end
