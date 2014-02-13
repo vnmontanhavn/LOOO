@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7524A42C18ACF04D00587FB3 /* WeaponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */; };
+		7524A42F18ACFB7000587FB3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7524A42E18ACFB7000587FB3 /* MainViewController.m */; };
 		C857150318ACF6C9008BBB7C /* BatalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C857150218ACF6C9008BBB7C /* BatalhaViewController.m */; };
 		C8E9044818ACDF2100F3B887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044718ACDF2100F3B887 /* Foundation.framework */; };
 		C8E9044A18ACDF2100F3B887 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9044918ACDF2100F3B887 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		7524A42A18ACF04D00587FB3 /* WeaponsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponsViewController.h; sourceTree = "<group>"; };
 		7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponsViewController.m; sourceTree = "<group>"; };
+		7524A42D18ACFB7000587FB3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7524A42E18ACFB7000587FB3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C857150118ACF6C9008BBB7C /* BatalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatalhaViewController.h; sourceTree = "<group>"; };
 		C857150218ACF6C9008BBB7C /* BatalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatalhaViewController.m; sourceTree = "<group>"; };
 		C8E9044418ACDF2100F3B887 /* LOO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +145,8 @@
 				C8E9045618ACDF2100F3B887 /* AppDelegate.h */,
 				C8E9045718ACDF2100F3B887 /* AppDelegate.m */,
 				C8E9045918ACDF2100F3B887 /* Main.storyboard */,
+				7524A42D18ACFB7000587FB3 /* MainViewController.h */,
+				7524A42E18ACFB7000587FB3 /* MainViewController.m */,
 				7524A42A18ACF04D00587FB3 /* WeaponsViewController.h */,
 				7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */,
 				C8E9045C18ACDF2100F3B887 /* CharactersViewController.h */,
@@ -298,6 +303,7 @@
 				7524A42C18ACF04D00587FB3 /* WeaponsViewController.m in Sources */,
 				C857150318ACF6C9008BBB7C /* BatalhaViewController.m in Sources */,
 				C8E9048A18ACE26C00F3B887 /* Magia.m in Sources */,
+				7524A42F18ACFB7000587FB3 /* MainViewController.m in Sources */,
 				C8E9049018ACE28C00F3B887 /* LeagueOfOrientedObject.m in Sources */,
 				C8E9045E18ACDF2100F3B887 /* CharactersViewController.m in Sources */,
 				C8E9048618ACE26C00F3B887 /* ArcoeFlecha.m in Sources */,
