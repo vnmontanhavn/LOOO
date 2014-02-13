@@ -11,7 +11,7 @@
 @interface ViewController : UIViewController
 - (IBAction)btnElfo:(id)sender;
 - (IBAction)btnHumano:(id)sender;
-- (IBAction)btnOrc:(id)sender;
-- (IBAction)btnAnao:(id)sender;
+//- (IBAction)btnOrc:(id)sender;
+//- (IBAction)btnAnao:(id)sender;
 
 @end
