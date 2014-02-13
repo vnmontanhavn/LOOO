@@ -137,6 +137,9 @@
                                 <state key="normal" title="Espada">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="espada:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="Y25-Lw-Yx4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOG-Jy-mrm">
                                 <rect key="frame" x="206" y="118" width="94" height="30"/>
@@ -144,6 +147,9 @@
                                 <state key="normal" title="Arco e Flecha">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="arcoeflecha:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="Ahg-mA-suO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7f-7y-oUD">
                                 <rect key="frame" x="20" y="215" width="42" height="30"/>
@@ -151,6 +157,9 @@
                                 <state key="normal" title="Magia">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="magia:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="jKP-2U-3hj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-qo-LZQ">
                                 <rect key="frame" x="206" y="215" width="65" height="30"/>
@@ -158,6 +167,9 @@
                                 <state key="normal" title="Machado">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="machado:" destination="o5w-Xc-YHu" eventType="touchUpInside" id="R5Y-9z-pz4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

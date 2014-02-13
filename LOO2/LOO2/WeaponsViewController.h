@@ -20,5 +20,9 @@
     int wepon1player2;
     int wepon2player2;
 }
+- (IBAction)espada:(id)sender;
+- (IBAction)magia:(id)sender;
+- (IBAction)arcoeflecha:(id)sender;
+- (IBAction)machado:(id)sender;
 
 @end

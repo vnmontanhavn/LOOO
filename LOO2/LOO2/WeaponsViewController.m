@@ -37,4 +37,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)espada:(id)sender {
+}
+
+- (IBAction)magia:(id)sender {
+}
+
+- (IBAction)arcoeflecha:(id)sender {
+}
+
+- (IBAction)machado:(id)sender {
+}
 @end
