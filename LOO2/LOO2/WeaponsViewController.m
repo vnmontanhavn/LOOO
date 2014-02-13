@@ -73,10 +73,10 @@ int qtd = 0;
     UIButton *theButton = (UIButton *)sender;
     if(qtd<2){
         if(qtd==0) {
-            wepon1player1 = 2;
+            wepon1player1 = 4;
             theButton.enabled = NO;
         }
-        else wepon2player1 =2;
+        else wepon2player1 =4;
         qtd++;
     }
     if (qtd>1){
@@ -103,10 +103,10 @@ int qtd = 0;
     UIButton *theButton = (UIButton *)sender;
     if(qtd<2){
         if(qtd==0) {
-            wepon1player1 = 4;
+            wepon1player1 = 2;
         theButton.enabled = NO;
         }
-        else wepon2player1 =4;
+        else wepon2player1 =2;
         qtd++;
     }
     if (qtd>1){

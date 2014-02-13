@@ -86,6 +86,11 @@
         player2.armaSecundaria = [[Magia alloc]init];
     }
     
+    NSLog(@"%@",player1.armaPrimaria);
+    NSLog(@"%@",player1.armaSecundaria);
+    NSLog(@"%d",player1.raca);
+
+    
 	// Do any additional setup after loading the view.
 }
 
