@@ -28,7 +28,7 @@ int qtd = 0;
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
     srand(time(NULL));
     wepon1player2 = arc4random() % 4;
     if ( wepon1player1 == 0)
@@ -41,7 +41,7 @@ int qtd = 0;
         wepon2player2 = 4;
     if ( wepon1player1 == 4)
         wepon2player2 = 0;
-	
+	[super viewDidLoad];
 	
     
 	//wepon2player2 = arc4random() % 4;
