@@ -28,6 +28,7 @@
 		C8E9048A18ACE26C00F3B887 /* Magia.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048518ACE26C00F3B887 /* Magia.m */; };
 		C8E9048F18ACE28C00F3B887 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048C18ACE28C00F3B887 /* Jogador.m */; };
 		C8E9049018ACE28C00F3B887 /* LeagueOfOrientedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9048E18ACE28C00F3B887 /* LeagueOfOrientedObject.m */; };
+		C8E9049218ACE35A00F3B887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9049118ACE35A00F3B887 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		C8E9048C18ACE28C00F3B887 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
 		C8E9048D18ACE28C00F3B887 /* LeagueOfOrientedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueOfOrientedObject.h; sourceTree = "<group>"; };
 		C8E9048E18ACE28C00F3B887 /* LeagueOfOrientedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueOfOrientedObject.m; sourceTree = "<group>"; };
+		C8E9049118ACE35A00F3B887 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				C8E9045D18ACDF2100F3B887 /* ViewController.m */,
 				C8E9045F18ACDF2100F3B887 /* Images.xcassets */,
 				C8E9048B18ACE28C00F3B887 /* Jogador.h */,
+				C8E9049118ACE35A00F3B887 /* main.m */,
 				C8E9048C18ACE28C00F3B887 /* Jogador.m */,
 				C8E9048D18ACE28C00F3B887 /* LeagueOfOrientedObject.h */,
 				C8E9048E18ACE28C00F3B887 /* LeagueOfOrientedObject.m */,
@@ -293,6 +296,7 @@
 				C8E9048918ACE26C00F3B887 /* Machado.m in Sources */,
 				C8E9045818ACDF2100F3B887 /* AppDelegate.m in Sources */,
 				C8E9045418ACDF2100F3B887 /* main.m in Sources */,
+				C8E9049218ACE35A00F3B887 /* main.m in Sources */,
 				C8E9048818ACE26C00F3B887 /* Espada.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +506,6 @@
 				C8E9047818ACDF2100F3B887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		C8E9047918ACDF2100F3B887 /* Build configuration list for PBXNativeTarget "LOO2Tests" */ = {
 			isa = XCConfigurationList;
@@ -511,7 +514,6 @@
 				C8E9047B18ACDF2100F3B887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
