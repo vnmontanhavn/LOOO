@@ -34,6 +34,8 @@
     player2 = [[Jogador alloc] init];
     player1.raca = self.raceP1;
     player2.raca = self.raceP2;
+    
+    //arma1 player 1
     if (self.wep1P1==1) {
         player1.armaPrimaria = [[Espada alloc] init];
     }
@@ -47,6 +49,7 @@
         player1.armaPrimaria = [[Magia alloc]init];
     }
     
+    //arma 2 player 1
     if (self.wep2P1==1) {
         player1.armaSecundaria = [[Espada alloc] init];
     }
@@ -60,6 +63,7 @@
         player1.armaSecundaria = [[Magia alloc]init];
     }
     
+    //arma 1 player 2
     if (self.wep1P2==1) {
         player2.armaPrimaria = [[Espada alloc] init];
     }
@@ -73,6 +77,8 @@
         player2.armaPrimaria = [[Magia alloc]init];
     }
     
+    
+    //arma 2 player 2
     if (self.wep2P2==1) {
         player2.armaSecundaria = [[Espada alloc] init];
     }
@@ -89,6 +95,9 @@
     NSLog(@"%@",player1.armaPrimaria);
     NSLog(@"%@",player1.armaSecundaria);
     NSLog(@"%d",player1.raca);
+    NSLog(@"%@",player2.armaPrimaria);
+    NSLog(@"%@",player2.armaSecundaria);
+    NSLog(@"%d",player2.raca);
 
     
 	// Do any additional setup after loading the view.
