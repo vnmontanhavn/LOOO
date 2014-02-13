@@ -21,6 +21,8 @@
 {
     
     [super viewDidLoad];
+    raceplayer2 = arc4random() % 4;
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,18 +33,22 @@
 }
 
 - (IBAction)btnElfo:(id)sender {
+    raceplayer1 =1;
     [self showWeaponsView];
 }
 
 - (IBAction)btnHumano:(id)sender {
+    raceplayer1 =2;
     [self showWeaponsView];
 }
 
 - (IBAction)btnOrc:(id)sender {
+    raceplayer1 =3;
     [self showWeaponsView];
 }
 
 - (IBAction)btnAnao:(id)sender {
+    raceplayer1 =4;
     [self showWeaponsView];
 }
 
