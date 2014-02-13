@@ -41,9 +41,12 @@ int qtd = 0;
 }
 
 - (IBAction)espada:(id)sender {
+    UIButton *theButton = (UIButton *)sender;
     if(qtd<2){
-        if(qtd==0)
+        if(qtd==0) {
         wepon1player1 = 1;
+            theButton.enabled = NO;
+        }
         else wepon2player1 =1;
         qtd++;
     }
@@ -53,9 +56,12 @@ int qtd = 0;
 }
 
 - (IBAction)magia:(id)sender {
+    UIButton *theButton = (UIButton *)sender;
     if(qtd<2){
-        if(qtd==0)
+        if(qtd==0) {
             wepon1player1 = 2;
+            theButton.enabled = NO;
+        }
         else wepon2player1 =2;
         qtd++;
     }
@@ -65,9 +71,12 @@ int qtd = 0;
 }
 
 - (IBAction)arcoeflecha:(id)sender {
+    UIButton *theButton = (UIButton *)sender;
     if(qtd<2){
-        if(qtd==0)
+        if(qtd==0) {
             wepon1player1 = 3;
+            theButton.enabled = NO;
+        }
         else wepon2player1 =3;
         qtd++;
     }
@@ -77,9 +86,12 @@ int qtd = 0;
 }
 
 - (IBAction)machado:(id)sender {
+    UIButton *theButton = (UIButton *)sender;
     if(qtd<2){
-        if(qtd==0)
+        if(qtd==0) {
             wepon1player1 = 4;
+        theButton.enabled = NO;
+        }
         else wepon2player1 =4;
         qtd++;
     }
