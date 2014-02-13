@@ -20,6 +20,8 @@
     int wepon1player2;
     int wepon2player2;
 }
+@property(assign) int racep1;
+@property(assign) int racep2;
 - (IBAction)espada:(id)sender;
 - (IBAction)magia:(id)sender;
 - (IBAction)arcoeflecha:(id)sender;

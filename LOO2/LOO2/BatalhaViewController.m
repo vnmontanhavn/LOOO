@@ -7,6 +7,7 @@
 //
 
 #import "BatalhaViewController.h"
+#import "WeaponsViewController.h"
 
 @interface BatalhaViewController ()
 
@@ -31,6 +32,8 @@
     [super viewDidLoad];
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
+    
+    
 	// Do any additional setup after loading the view.
 }
 

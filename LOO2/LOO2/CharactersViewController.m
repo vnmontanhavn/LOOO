@@ -55,6 +55,8 @@
 - (void)showWeaponsView
 {
     WeaponsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"weapons"];
+    controller.racep1 = raceplayer1;
+    controller.racep2 = raceplayer2;
     [self presentViewController:controller animated:YES completion:nil];
 }
 

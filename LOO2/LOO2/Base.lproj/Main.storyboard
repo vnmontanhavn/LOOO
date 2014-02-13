@@ -185,7 +185,7 @@
         <!--Batalha View Controller-->
         <scene sceneID="rqD-eb-h3K">
             <objects>
-                <viewController id="yYT-Ax-lUm" customClass="BatalhaViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="batalha" id="yYT-Ax-lUm" customClass="BatalhaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="INk-dP-AGg"/>
                         <viewControllerLayoutGuide type="bottom" id="zrI-B7-y46"/>

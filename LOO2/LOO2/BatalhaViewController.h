@@ -17,5 +17,10 @@
     
     
 }
-
+@property(assign) int raceP1;
+@property(assign) int raceP2;
+@property(assign) int wep1P1;
+@property(assign) int wep2P1;
+@property(assign) int wep1P2;
+@property(assign) int wep2P2;
 @end

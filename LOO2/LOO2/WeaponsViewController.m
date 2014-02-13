@@ -90,6 +90,13 @@ int qtd = 0;
 - (void)showBatalhaView
 {
     BatalhaViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"batalha"];
+    controller.wep1P1 = wepon1player1;
+    controller.wep2P1 = wepon2player1;
+    controller.wep1P2 = wepon1player2;
+    controller.wep2P2 = wepon2player2;
+    controller.raceP1 = self.racep1;
+    controller.raceP2 = self.racep2;
+    
     [self presentViewController:controller animated:YES completion:nil];
 }
 
