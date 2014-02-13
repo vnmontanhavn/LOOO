@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Jogador.h"
+#import "BatalhaViewController.h"
+
 
 @interface CharactersViewController : UIViewController
+{
+    int raceplayer1;
+    int raceplayer2;
+}
+
 - (IBAction)btnElfo:(id)sender;
 - (IBAction)btnHumano:(id)sender;
-//- (IBAction)btnOrc:(id)sender;
-//- (IBAction)btnAnao:(id)sender;
+- (IBAction)btnOrc:(id)sender;
+- (IBAction)btnAnao:(id)sender;
 
 @end

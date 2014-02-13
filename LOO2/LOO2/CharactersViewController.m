@@ -9,14 +9,17 @@
 #import "CharactersViewController.h"
 #import "WeaponsViewController.h"
 
+
 @interface CharactersViewController ()
 
 @end
 
 @implementation CharactersViewController
 
+
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
