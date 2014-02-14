@@ -16,7 +16,8 @@
     int raceplayer1;
     int raceplayer2;
 }
-
+@property(assign) NSString *nome1;
+@property(assign) NSString *nome2;
 - (IBAction)btnElfo:(id)sender;
 - (IBAction)btnHumano:(id)sender;
 - (IBAction)btnOrc:(id)sender;

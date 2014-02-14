@@ -1,20 +1,19 @@
 //
-//  MainViewController.m
+//  NomeViewController.m
 //  LOO2
 //
-//  Created by Renan Cargnin on 2/13/14.
+//  Created by Vinicius Soares Lima on 14/02/14.
 //  Copyright (c) 2014 Vinicius Soares Lima. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "CharactersViewController.h"
 #import "NomeViewController.h"
+#import "CharactersViewController.h"
 
-@interface MainViewController ()
+@interface NomeViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation NomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,10 +35,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)showCharacterView:(UIButton *)sender {
-    NomeViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Nome"];
+- (IBAction)aplicar:(id)sender {
+    CharactersViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"characters"];
     [self presentViewController:controller animated:YES completion:nil];
 }
+
 
 @end
