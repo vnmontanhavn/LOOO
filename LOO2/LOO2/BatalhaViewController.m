@@ -31,11 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //cria os jogadores
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
+    
+    //define recas
     player1.raca = self.raceP1;
     player2.raca = self.raceP2;
-    
     
     //arma1 player 1
     if (self.wep1P1==1) {
@@ -94,6 +96,8 @@
         player2.armaSecundaria = [[Magia alloc]init];
     }
     
+    NSLog(@"%@",self.nome1);
+    NSLog(@"%@",self.nome2);
     NSLog(@"%@",player1.armaPrimaria);
     NSLog(@"%@",player1.armaSecundaria);
     NSLog(@"%d",player1.raca);
@@ -101,6 +105,19 @@
     NSLog(@"%@",player2.armaSecundaria);
     NSLog(@"%d",player2.raca);
 
+    nome = [[NSMutableArray alloc]init];
+    //[nome addObject:player1.nome];
+    [nome addObject:[self nome1]];
+    [nome addObject:[ player1 armaPrimaria].nome];
+    [nome addObject:[player1 armaSecundaria].nome];
+    
+    [nome addObject:[self nome2]];
+    [nome addObject:[ player2 armaPrimaria].nome];
+    [nome addObject:[player2 armaSecundaria].nome];
+    
+    self.pickerView.delegate = self;
+    self.pickerView.dataSource = self;
+    [self.pickerView reloadAllComponents];
     
 	// Do any additional setup after loading the view.
     
@@ -112,6 +129,10 @@
                      }];
      */
 }
+
+
+
+
 
 - (NSInteger)numberOfComponentsInPickerView:
 (UIPickerView *)pickerView
@@ -125,17 +146,33 @@ numberOfRowsInComponent:(NSInteger)component
     return nome.count;
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView
-             titleForRow:(NSInteger)row
-            forComponent:(NSInteger)component
+-(NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return nome[row];
+    //NSLog(@"%@/n",[nome objectAtIndex:row]);
+    return [nome objectAtIndex:row];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)anima:(id)sender {
+    srand(time(NULL));
+    int num = 0;
+    //int num = rand() % [nome count];
+    
+    while (num < [nome count]) {
+    
+        
+        [self performSelector: @selector(update) withObject:nil afterDelay:4.0];
+        num++;
+    }
+}
+-(void)update
+{
+    [self.pickerView selectRow:5 inComponent:0 animated:YES];
 }
 
 @end
