@@ -122,6 +122,8 @@ int qtd = 0;
     controller.wep2P2 = wepon2player2;
     controller.raceP1 = self.racep1;
     controller.raceP2 = self.racep2;
+    controller.nome1 = self.nome1;
+    controller.nome2 = self.nome2;
     
     [self presentViewController:controller animated:YES completion:nil];
 }

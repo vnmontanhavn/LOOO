@@ -24,4 +24,6 @@
 @property(assign) int wep2P1;
 @property(assign) int wep1P2;
 @property(assign) int wep2P2;
+@property(assign) NSString *nome1;
+@property(assign) NSString *nome2;
 @end
