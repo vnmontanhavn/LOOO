@@ -155,6 +155,7 @@ int num = 0;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
     LeagueOfOrientedObject *l1 = [[LeagueOfOrientedObject alloc] init];
+    [l1 setnomes:self.nome1 andWith:self.nome2];
     [l1 jogar:player1 andWith:player2];
     NSString* nums = [NSString stringWithFormat:@"%d", num];
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2

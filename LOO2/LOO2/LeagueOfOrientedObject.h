@@ -11,8 +11,12 @@
 #import "BatalhaViewController.h"
 
 @interface LeagueOfOrientedObject : NSObject
+{
+    NSString *nomej1;
+    NSString *nomej2;
+}
     
 -(void) jogar:(Jogador *) j1 andWith:(Jogador *)j2;
-
+-(void) setnomes:(NSString *) j1 andWith:(NSString *)j2;
 @end
 

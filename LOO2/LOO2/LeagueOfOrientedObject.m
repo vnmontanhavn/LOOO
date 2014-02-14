@@ -20,6 +20,11 @@
     
 @implementation LeagueOfOrientedObject
 
+-(void) setnomes:(NSString *) j1 andWith:(NSString *)j2{
+    nomej1 = j1;
+    nomej2 = j2;
+}
+
 -(void) jogar:(Jogador *) j1 andWith:(Jogador *)j2
 {
     srand(time(NULL));
