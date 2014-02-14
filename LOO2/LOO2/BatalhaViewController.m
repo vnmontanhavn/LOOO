@@ -16,7 +16,7 @@
 
 @implementation BatalhaViewController
 
-
+int num = 0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -210,16 +210,25 @@ numberOfRowsInComponent:(NSInteger)component
     int num = 0;
     //int num = rand() % [nome count];
     
-    while (num < [nome count]) {
+    //while (num < [nome count]) {
     
+        NSString* nums = [NSString stringWithFormat:@"%d", num];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2
+                                                          target:self
+                                                        selector:@selector(update)
+                                                        userInfo:nil
+                                                         repeats:YES];
+        //[self performSelector: @selector(update:) withObject:nums afterDelay:1.0];
         
-        [self performSelector: @selector(update) withObject:nil afterDelay:4.0];
-        num++;
-    }
+        
+    //}
 }
--(void)update
+-(void) update
 {
-    [self.pickerView selectRow:5 inComponent:0 animated:YES];
+    [self.pickerView selectRow:num  inComponent:0 animated:YES];
+    num++;
 }
+
+
 
 @end
