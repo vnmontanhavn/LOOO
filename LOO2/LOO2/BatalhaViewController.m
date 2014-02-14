@@ -106,9 +106,10 @@
     NSLog(@"%d",player2.raca);
 
     nome = [[NSMutableArray alloc]init];
-    [nome addObject:@"Eduardo"];
-    [nome addObject:@"Lombardi"];
-    [nome addObject:@"Ribeiro"];
+    //[nome addObject:player1.nome];
+    [nome addObject:[ player1 armaPrimaria].nome];
+    [nome addObject:[player1 armaSecundaria].nome];
+    [nome addObject:[player1 nome]];
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
