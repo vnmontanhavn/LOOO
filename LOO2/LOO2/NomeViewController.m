@@ -72,11 +72,9 @@ NSString *nomeinimigo;
 	// Do any additional setup after loading the view.
 }
 
-- (void)textFieldShouldReturn:(UITextField *)inputText
+- (void)textFieldShouldReturn:(UITextField *)fildnome
 {
-    if (inputText == self.fieldnome) {
-        [inputText resignFirstResponder];
-    }
+    
     [self aplicar:nil];
 }
 
