@@ -14,6 +14,7 @@
 {
     NSString *nomej1;
     NSString *nomej2;
+    NSMutableArray *batalha;;
 }
     
 -(void) jogar:(Jogador *) j1 andWith:(Jogador *)j2;
