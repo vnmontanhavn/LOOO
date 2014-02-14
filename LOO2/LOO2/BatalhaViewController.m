@@ -153,19 +153,29 @@
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
+}
+
+
+- (IBAction)animate:(UIButton *)sender {
+    CGRect destination1Frame = self.jogador.frame;
+    self.jogador.frame = CGRectMake(-self.jogador.frame.size.width, self.jogador.frame.origin.y, self.jogador.frame.size.width, self.jogador.frame.size.height);
     
-	// Do any additional setup after loading the view.
+    [UIView animateWithDuration:2
+                     animations:^{
+                         self.jogador.frame = destination1Frame;
+                     }
+                     completion:nil
+     ];
     
     
     /*
     [UIView animateWithDuration:4.0
                      animations:^{
-                         player1Image.center = CGPointMake(160, player1Image.center.y);
-                     }];
-     */
+                         self.inimigo.frame = destination2Frame;
+                     }
+                     completion:nil
+     ];
 }
-
-
 
 
 
