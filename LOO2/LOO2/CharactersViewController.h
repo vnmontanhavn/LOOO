@@ -15,6 +15,7 @@
 {
     int raceplayer1;
     int raceplayer2;
+    NSString *nome;
 }
 @property(assign) NSString *nome1;
 @property(assign) NSString *nome2;
