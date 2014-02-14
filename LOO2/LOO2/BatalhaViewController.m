@@ -28,12 +28,8 @@
     return self;
 }
 
-- (void)viewDidLoad\
+- (void)viewDidLoad
 {
-    nome = [[NSMutableArray alloc]init];
-    [nome addObject:@"Eduardo"];
-    [nome addObject:@"Lombardi"];
-    [nome addObject:@"Ribeiro"];
     [super viewDidLoad];
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
@@ -105,6 +101,13 @@
     NSLog(@"%@",player2.armaSecundaria);
     NSLog(@"%d",player2.raca);
 
+    nome = [[NSMutableArray alloc]init];
+    [nome addObject:@"Eduardo"];
+    [nome addObject:@"Lombardi"];
+    [nome addObject:@"Ribeiro"];
+    self.pickerView.delegate = self;
+    self.pickerView.dataSource = self;
+    [self.pickerView reloadAllComponents];
     
 	// Do any additional setup after loading the view.
 }
@@ -121,11 +124,9 @@ numberOfRowsInComponent:(NSInteger)component
     return nome.count;
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView
-             titleForRow:(NSInteger)row
-            forComponent:(NSInteger)component
+-(NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    NSLog(@"%@/n",[nome objectAtIndex:row]);
+    //NSLog(@"%@/n",[nome objectAtIndex:row]);
     return [nome objectAtIndex:row];
 }
 
