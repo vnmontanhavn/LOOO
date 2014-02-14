@@ -29,4 +29,6 @@
 @property(assign) NSString *nome1;
 - (IBAction)anima:(id)sender;
 @property(assign) NSString *nome2;
+@property (weak, nonatomic) IBOutlet UIImageView *jogador;
+@property (weak, nonatomic) IBOutlet UIImageView *inimigo;
 @end

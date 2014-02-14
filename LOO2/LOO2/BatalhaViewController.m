@@ -9,6 +9,7 @@
 #import "BatalhaViewController.h"
 #import "WeaponsViewController.h"
 
+
 @interface BatalhaViewController ()
 
 @end
@@ -38,6 +39,40 @@
     //define recas
     player1.raca = self.raceP1;
     player2.raca = self.raceP2;
+    UIImage *img;
+    UIImage *img2;
+    
+    switch (player1.raca) {
+        case 0:
+             img = [UIImage imageNamed:@"elfo"];
+            break;
+        case 1:
+            img = [UIImage imageNamed:@"orc"];
+            break;
+        case 2:
+            img = [UIImage imageNamed:@"humano"];
+            break;
+        default:
+            img = [UIImage imageNamed:@"anao"];
+            break;
+    }
+    [_jogador setImage:img];
+    
+    switch (player2.raca) {
+        case 0:
+            img2 = [UIImage imageNamed:@"elfo"];
+            break;
+        case 1:
+            img2 = [UIImage imageNamed:@"orc"];
+            break;
+        case 2:
+            img2 = [UIImage imageNamed:@"humano"];
+            break;
+        default:
+            img2 = [UIImage imageNamed:@"anao"];
+            break;
+    }
+    [_inimigo setImage:img2];
     
     //arma1 player 1
     if (self.wep1P1==1) {
