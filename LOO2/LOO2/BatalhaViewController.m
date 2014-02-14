@@ -9,6 +9,7 @@
 #import "BatalhaViewController.h"
 #import "WeaponsViewController.h"
 
+
 @interface BatalhaViewController ()
 
 @end
@@ -38,6 +39,40 @@ int num = 0;
     //define recas
     player1.raca = self.raceP1;
     player2.raca = self.raceP2;
+    UIImage *img;
+    UIImage *img2;
+    
+    switch (player1.raca) {
+        case 0:
+             img = [UIImage imageNamed:@"elfo"];
+            break;
+        case 1:
+            img = [UIImage imageNamed:@"orc"];
+            break;
+        case 2:
+            img = [UIImage imageNamed:@"humano"];
+            break;
+        default:
+            img = [UIImage imageNamed:@"anao"];
+            break;
+    }
+    [_jogador setImage:img];
+    
+    switch (player2.raca) {
+        case 0:
+            img2 = [UIImage imageNamed:@"elfo"];
+            break;
+        case 1:
+            img2 = [UIImage imageNamed:@"orc"];
+            break;
+        case 2:
+            img2 = [UIImage imageNamed:@"humano"];
+            break;
+        default:
+            img2 = [UIImage imageNamed:@"anao"];
+            break;
+    }
+    [_inimigo setImage:img2];
     
     //arma1 player 1
     if (self.wep1P1==1) {
@@ -118,11 +153,30 @@ int num = 0;
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
-    
-    	// Do any additional setup after loading the view.
 }
 
 
+- (IBAction)animate:(UIButton *)sender {
+    CGRect destination1Frame = self.jogador.frame;
+    self.jogador.frame = CGRectMake(-self.jogador.frame.size.width, self.jogador.frame.origin.y, self.jogador.frame.size.width, self.jogador.frame.size.height);
+    
+    [UIView animateWithDuration:2
+                     animations:^{
+                         self.jogador.frame = destination1Frame;
+                     }
+                     completion:nil
+     ];
+    
+    CGRect destination2Frame = self.inimigo.frame;
+    self.inimigo.frame = CGRectMake(self.view.bounds.size.width + self.inimigo.frame.size.width, self.inimigo.frame.origin.y, self.inimigo.frame.size.width, self.inimigo.frame.size.height);
+    
+    [UIView animateWithDuration:2
+                     animations:^{
+                         self.inimigo.frame = destination2Frame;
+                     }
+                     completion:nil
+     ];
+}
 
 
 
