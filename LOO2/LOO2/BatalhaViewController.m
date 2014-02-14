@@ -156,7 +156,7 @@
     
 	// Do any additional setup after loading the view.
     
-    player1Image.center = CGPointMake(-(player1Image.frame.size.width / 2), player1Image.center.y);
+    
     /*
     [UIView animateWithDuration:4.0
                      animations:^{

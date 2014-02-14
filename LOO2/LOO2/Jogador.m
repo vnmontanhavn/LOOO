@@ -15,8 +15,8 @@
 
 @implementation Jogador
 static int ELFO=0;
-static int HUMANO=1;
-static int ORC = 2;
+static int HUMANO=2;
+static int ORC = 1;
 static int ANAO=3;
 
 
