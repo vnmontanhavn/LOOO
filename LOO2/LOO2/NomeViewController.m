@@ -30,7 +30,7 @@ NSString *nomeinimigo;
 {
     [super viewDidLoad];
     int aux;
-    
+    //define nome do inimigo
     aux = arc4random() % 10;
     switch (aux) {
         case 0:
@@ -76,10 +76,13 @@ NSString *nomeinimigo;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//funçao que passa pra proxima tela com os dados
 - (IBAction)aplicar:(id)sender {
     CharactersViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"characters"];
+    //joga os dados dessa tela na proxima tela
     controller.nome1 = self.fieldnome.text;
     controller.nome2 = nomeinimigo;
+    //---------------------------------------
     [self presentViewController:controller animated:YES completion:nil];
 }
 

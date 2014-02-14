@@ -29,7 +29,8 @@ int qtd = 0;
 - (void)viewDidLoad
 {
     
-    srand(time(NULL));
+    [super viewDidLoad];
+    //define as armas do inimigo sem repetir
     wepon1player2 = arc4random() % 4;
     if ( wepon1player2 == 0)
         wepon2player2 = 1;
@@ -41,8 +42,7 @@ int qtd = 0;
         wepon2player2 = 4;
     if ( wepon1player2 == 4)
         wepon2player2 = 0;
-	[super viewDidLoad];
-	
+		
     
 	//wepon2player2 = arc4random() % 4;
     // Do any additional setup after loading the view.
@@ -113,9 +113,11 @@ int qtd = 0;
         [self showBatalhaView];
     }
 }
+//passa para a proxima tela
 - (void)showBatalhaView
 {
     BatalhaViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"batalha"];
+    //passa os dados para a proxima tela
     controller.wep1P1 = wepon1player1;
     controller.wep2P1 = wepon2player1;
     controller.wep1P2 = wepon1player2;

@@ -31,11 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //cria os jogadores
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
+    
+    //define recas
     player1.raca = self.raceP1;
     player2.raca = self.raceP2;
-    
     
     //arma1 player 1
     if (self.wep1P1==1) {

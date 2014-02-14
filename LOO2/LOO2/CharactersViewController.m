@@ -53,15 +53,16 @@
     raceplayer1 =3;
     [self showWeaponsView];
 }
-
+//passa para a proxima tela
 - (void)showWeaponsView
 {
     WeaponsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"weapons"];
-    
+    //passa os dados para a proxima tela
     controller.racep1 = raceplayer1;
     controller.racep2 = raceplayer2;
     controller.nome1 = nome;
     controller.nome2 = self.nome2;
+    //----------------------------------
     [self presentViewController:controller animated:YES completion:nil];
 }
 
