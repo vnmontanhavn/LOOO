@@ -96,6 +96,8 @@
         player2.armaSecundaria = [[Magia alloc]init];
     }
     
+    NSLog(@"%@",self.nome1);
+    NSLog(@"%@",self.nome2);
     NSLog(@"%@",player1.armaPrimaria);
     NSLog(@"%@",player1.armaSecundaria);
     NSLog(@"%d",player1.raca);

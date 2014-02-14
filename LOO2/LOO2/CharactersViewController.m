@@ -24,8 +24,6 @@
     //define a raca do inimigo
     raceplayer2 = arc4random() % 4;
     nome= self.nome1;
-    NSLog(@"%@",self.nome1);
-    NSLog(@"%@", self.nome2);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
