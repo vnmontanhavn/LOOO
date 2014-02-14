@@ -14,6 +14,7 @@
 {
     Jogador *player1;
     Jogador *player2;
+    NSMutableArray * nome;
     
     
 }
