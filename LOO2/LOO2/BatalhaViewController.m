@@ -153,6 +153,7 @@
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
+    
 }
 
 
@@ -167,9 +168,10 @@
                      completion:nil
      ];
     
+    CGRect destination2Frame = self.inimigo.frame;
+    self.inimigo.frame = CGRectMake(self.view.bounds.size.width + self.inimigo.frame.size.width, self.inimigo.frame.origin.y, self.inimigo.frame.size.width, self.inimigo.frame.size.height);
     
-    /*
-    [UIView animateWithDuration:4.0
+    [UIView animateWithDuration:2
                      animations:^{
                          self.inimigo.frame = destination2Frame;
                      }
