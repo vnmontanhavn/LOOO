@@ -28,8 +28,12 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)viewDidLoad\
 {
+    nome = [[NSMutableArray alloc]init];
+    [nome addObject:@"Eduardo"];
+    [nome addObject:@"Lombardi"];
+    [nome addObject:@"Ribeiro"];
     [super viewDidLoad];
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
@@ -121,7 +125,8 @@ numberOfRowsInComponent:(NSInteger)component
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component
 {
-    return nome[row];
+    NSLog(@"%@/n",[nome objectAtIndex:row]);
+    return [nome objectAtIndex:row];
 }
 
 - (void)didReceiveMemoryWarning

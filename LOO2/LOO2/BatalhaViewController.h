@@ -19,6 +19,7 @@
     
 }
 
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property(assign) int raceP1;
 @property(assign) int raceP2;
 @property(assign) int wep1P1;
