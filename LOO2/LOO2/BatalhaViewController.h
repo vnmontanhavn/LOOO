@@ -15,8 +15,6 @@
     Jogador *player1;
     Jogador *player2;
     NSMutableArray * nome;
-    __weak IBOutlet UIImageView *player1Image;
-    __weak IBOutlet UIImageView *player2Image;
 }
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
