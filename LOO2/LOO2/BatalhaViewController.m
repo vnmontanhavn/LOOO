@@ -103,15 +103,24 @@
 
     nome = [[NSMutableArray alloc]init];
     //[nome addObject:player1.nome];
+    [nome addObject:[self nome1]];
     [nome addObject:[ player1 armaPrimaria].nome];
     [nome addObject:[player1 armaSecundaria].nome];
-    [nome addObject:[player1 nome]];
+    
+    [nome addObject:[self nome2]];
+    [nome addObject:[ player2 armaPrimaria].nome];
+    [nome addObject:[player2 armaSecundaria].nome];
+    
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
     
-	// Do any additional setup after loading the view.
+    	// Do any additional setup after loading the view.
 }
+
+
+
+
 
 - (NSInteger)numberOfComponentsInPickerView:
 (UIPickerView *)pickerView
@@ -135,6 +144,23 @@ numberOfRowsInComponent:(NSInteger)component
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)anima:(id)sender {
+    srand(time(NULL));
+    int num = 0;
+    //int num = rand() % [nome count];
+    
+    while (num < [nome count]) {
+    
+        
+        [self performSelector: @selector(update) withObject:nil afterDelay:4.0];
+        num++;
+    }
+}
+-(void)update
+{
+    [self.pickerView selectRow:5 inComponent:0 animated:YES];
 }
 
 @end
