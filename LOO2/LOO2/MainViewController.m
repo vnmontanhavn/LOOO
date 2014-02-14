@@ -39,6 +39,7 @@
 
 - (IBAction)showCharacterView:(UIButton *)sender {
     NomeViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Nome"];
+    
     [self presentViewController:controller animated:YES completion:nil];
 }
 

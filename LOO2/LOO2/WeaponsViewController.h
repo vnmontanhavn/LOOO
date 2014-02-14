@@ -23,6 +23,9 @@
 }
 @property(assign) int racep1;
 @property(assign) int racep2;
+@property(assign) NSString *nome1;
+@property(assign) NSString *nome2;
+
 - (IBAction)espada:(id)sender;
 - (IBAction)magia:(id)sender;
 - (IBAction)arcoeflecha:(id)sender;

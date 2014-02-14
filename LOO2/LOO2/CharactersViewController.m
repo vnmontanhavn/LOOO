@@ -22,7 +22,9 @@
     
     [super viewDidLoad];
     raceplayer2 = arc4random() % 4;
-    
+    nome= self.nome1;
+    NSLog(@"%@",self.nome1);
+    NSLog(@"%@", self.nome2);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -55,8 +57,11 @@
 - (void)showWeaponsView
 {
     WeaponsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"weapons"];
+    
     controller.racep1 = raceplayer1;
     controller.racep2 = raceplayer2;
+    controller.nome1 = nome;
+    controller.nome2 = self.nome2;
     [self presentViewController:controller animated:YES completion:nil];
 }
 

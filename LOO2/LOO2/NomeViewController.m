@@ -15,6 +15,8 @@
 
 @implementation NomeViewController
 
+NSString *nomeinimigo;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,45 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    int aux;
+    
+    aux = arc4random() % 10;
+    switch (aux) {
+        case 0:
+            nomeinimigo = @"Lafriscen";
+            break;
+        case 1:
+            nomeinimigo = @"Timrisbeorth";
+            break;
+        case 2:
+            nomeinimigo = @"Badzockskab";
+            break;
+        case 3:
+            nomeinimigo = @"Gashtanbug";
+            break;
+        case 4:
+            nomeinimigo = @"Rog-buck";
+            break;
+        case 5:
+            nomeinimigo = @"Thrilgrímnu";
+            break;
+        case 6:
+            nomeinimigo = @"Glokjalmus";
+            break;
+        case 7:
+            nomeinimigo = @"Thôr-kjalrun";
+            break;
+        case 8:
+            nomeinimigo = @"Hir'il";
+            break;
+        case 9:
+            nomeinimigo = @"Azlethtor";
+            break;
+        default:
+            nomeinimigo = @"Atinu";
+            break;
+    }
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -37,6 +78,8 @@
 }
 - (IBAction)aplicar:(id)sender {
     CharactersViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"characters"];
+    controller.nome1 = self.fieldnome.text;
+    controller.nome2 = nomeinimigo;
     [self presentViewController:controller animated:YES completion:nil];
 }
 
