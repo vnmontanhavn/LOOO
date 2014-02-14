@@ -157,9 +157,13 @@
 
 
 - (IBAction)animate:(UIButton *)sender {
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
     CGRect destination1Frame = self.jogador.frame;
     self.jogador.frame = CGRectMake(-self.jogador.frame.size.width, self.jogador.frame.origin.y, self.jogador.frame.size.width, self.jogador.frame.size.height);
-    
+    [self.jogador setHidden:NO];
     [UIView animateWithDuration:2
                      animations:^{
                          self.jogador.frame = destination1Frame;
@@ -169,7 +173,7 @@
     
     CGRect destination2Frame = self.inimigo.frame;
     self.inimigo.frame = CGRectMake(self.view.bounds.size.width + self.inimigo.frame.size.width, self.inimigo.frame.origin.y, self.inimigo.frame.size.width, self.inimigo.frame.size.height);
-    
+    [self.inimigo setHidden:NO];
     [UIView animateWithDuration:2
                      animations:^{
                          self.inimigo.frame = destination2Frame;
@@ -177,8 +181,6 @@
                      completion:nil
      ];
 }
-
-
 
 - (NSInteger)numberOfComponentsInPickerView:
 (UIPickerView *)pickerView

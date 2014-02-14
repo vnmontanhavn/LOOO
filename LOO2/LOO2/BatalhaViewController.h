@@ -15,6 +15,8 @@
     Jogador *player1;
     Jogador *player2;
     NSMutableArray * nome;
+    CGRect destinationJogador;
+    CGRect destinationInimigo;
 }
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
