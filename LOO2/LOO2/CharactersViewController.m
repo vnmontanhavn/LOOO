@@ -21,6 +21,7 @@
 {
     
     [super viewDidLoad];
+    //define a raca do inimigo
     raceplayer2 = arc4random() % 4;
     nome= self.nome1;
     NSLog(@"%@",self.nome1);
