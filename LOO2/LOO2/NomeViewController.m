@@ -29,6 +29,7 @@ NSString *nomeinimigo;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.fieldnome.delegate = self;
     int aux;
     
     aux = arc4random() % 10;
@@ -71,6 +72,15 @@ NSString *nomeinimigo;
 	// Do any additional setup after loading the view.
 }
 
+- (void)textFieldShouldReturn:(UITextField *)inputText
+{
+    if (inputText == self.fieldnome) {
+        [inputText resignFirstResponder];
+    }
+    [self aplicar:nil];
+}
+
+     
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
