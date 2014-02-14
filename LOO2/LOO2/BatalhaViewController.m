@@ -15,6 +15,7 @@
 
 @implementation BatalhaViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -34,6 +35,7 @@
     player2 = [[Jogador alloc] init];
     player1.raca = self.raceP1;
     player2.raca = self.raceP2;
+    
     
     //arma1 player 1
     if (self.wep1P1==1) {
