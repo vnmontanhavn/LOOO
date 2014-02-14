@@ -8,7 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-
+#import "BatalhaViewController.h"
 
 @interface LeagueOfOrientedObject : NSObject
     

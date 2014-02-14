@@ -14,7 +14,7 @@
 #import "Machado.h"
 #import "ArcoeFlecha.h"
 #import "LeagueOfOrientedObject.h"
-
+#import "BatalhaViewController.h"
 
 
     
@@ -33,12 +33,14 @@
         // NSLog(@"ataque: %f",[j1 ataque]);
         while (true)
         {
+            
             NSLog(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas] );
             scanf("%d",&arma);
+            
             if(arma==1)
             {
                 ataque = [j1 ataque];
-                
+                //[nome addObject:@"Player 1 ataca com %@: %.2f",[j1 armap], ataque];
                 NSLog(@"Player 1 ataca com %@: %.2f",[j1 armap], ataque);
                 [NSThread sleepForTimeInterval:1.0f];
                 ataqueEfet = [j2 sofreAtaque:ataque];

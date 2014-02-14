@@ -29,4 +29,5 @@
 @property(assign) NSString *nome2;
 @property (weak, nonatomic) IBOutlet UIImageView *jogador;
 @property (weak, nonatomic) IBOutlet UIImageView *inimigo;
+@property (strong ,nonatomic) NSMutableArray * nome;
 @end

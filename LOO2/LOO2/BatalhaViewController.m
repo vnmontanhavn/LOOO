@@ -8,6 +8,7 @@
 
 #import "BatalhaViewController.h"
 #import "WeaponsViewController.h"
+#import "LeagueOfOrientedObject.h"
 
 
 @interface BatalhaViewController ()
@@ -15,7 +16,7 @@
 @end
 
 @implementation BatalhaViewController
-
+@synthesize nome;
 int num = 0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -153,6 +154,16 @@ int num = 0;
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
+    LeagueOfOrientedObject *l1 = [[LeagueOfOrientedObject alloc] init];
+    [l1 jogar:player1 andWith:player2];
+    NSString* nums = [NSString stringWithFormat:@"%d", num];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2
+                                                      target:self
+                                                    selector:@selector(update)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    
+
 }
 
 
@@ -205,23 +216,7 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 - (IBAction)anima:(id)sender {
-    srand(time(NULL));
-    int num = 0;
-    //int num = rand() % [nome count];
-    
-    //while (num < [nome count]) {
-    
-        NSString* nums = [NSString stringWithFormat:@"%d", num];
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2
-                                                          target:self
-                                                        selector:@selector(update)
-                                                        userInfo:nil
-                                                         repeats:YES];
-        //[self performSelector: @selector(update:) withObject:nums afterDelay:1.0];
-        
-        
-    //}
-}
+   }
 -(void) update
 {
     [self.pickerView selectRow:num  inComponent:0 animated:YES];
