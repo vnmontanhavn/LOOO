@@ -33,7 +33,7 @@ NSString *nomeinimigo;
     self.fieldnome.delegate = self;
     int aux;
     //define nome do inimigo
-    aux = arc4random() % 10;
+    aux =  arc4random() % 15;
     switch (aux) {
         case 0:
             nomeinimigo = @"Lafriscen";
@@ -64,6 +64,21 @@ NSString *nomeinimigo;
             break;
         case 9:
             nomeinimigo = @"Azlethtor";
+            break;
+        case 10:
+            nomeinimigo = @"Chapolin";
+            break;
+        case 11:
+            nomeinimigo = @"Barba Negra";
+            break;
+        case 12:
+            nomeinimigo = @"Sr. Benevides";
+            break;
+        case 13:
+            nomeinimigo = @"Sr. Lombardi";
+            break;
+        case 14:
+            nomeinimigo = @"Sr. Madruga";
             break;
         default:
             nomeinimigo = @"Atinu";

@@ -216,7 +216,19 @@ numberOfRowsInComponent:(NSInteger)component
 {
     return [nome objectAtIndex:row];
 }
+-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    UILabel* tView = (UILabel*)view;
+    if (!tView){
+        tView = [[UILabel alloc] init];
+        // Setup label properties - frame, font, colors etc
+        [tView setFont:[UIFont fontWithName:@"arial"  size:18]];
+        [tView setTextAlignment:NSTextAlignmentCenter];
 
+    }
+    // Fill the label text here
+    [tView setText:[nome objectAtIndex:row]];
+    return tView;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

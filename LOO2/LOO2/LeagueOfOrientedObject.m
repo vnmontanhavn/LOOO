@@ -102,7 +102,7 @@
                 //[NSThread sleepForTimeInterval:1.0f];
                 ataqueEfet = [j1 sofreAtaque:ataque];
                 j1.vida -=ataqueEfet;
-                [batalha addObject:[NSString stringWithFormat:@"%@ leva de %@: %.2f",nomej2,j2.armap, ataqueEfet]];
+                [batalha addObject:[NSString stringWithFormat:@"%@ leva de %@: %.2f",nomej1,j1.armap, ataqueEfet]];
                 NSLog(@"Player 1 sofre ataque de %@: %.2f",[j2 armap], ataqueEfet);
                // [NSThread sleepForTimeInterval:1.0f];
                 [batalha addObject:[NSString stringWithFormat:@"%@ vida: %.2f",nomej1,j1.vida]];
@@ -195,7 +195,7 @@
                 [batalha addObject:[NSString stringWithFormat:@"%@ leva de %@: %.2f",nomej2,[j1 armap], ataqueEfet]];
                 NSLog(@"Player 2 sofre ataque de %@: %.2f",[j1 armap], ataqueEfet);
               //  [NSThread sleepForTimeInterval:1.0f];
-                [batalha addObject:[NSString stringWithFormat:@"%@ vida: %f",nomej2, j2.vida]];
+                [batalha addObject:[NSString stringWithFormat:@"%@ vida: %.2f",nomej2, j2.vida]];
                 NSLog(@"Player 2 vida: %.2f",[j2 vida]);
             //    [NSThread sleepForTimeInterval:1.0f];
                 if (j1.vida<=0 || j2.vida<=0)
@@ -206,15 +206,15 @@
             else
             {
                 ataque = [j1 ataque2];
-                [batalha addObject:[NSString stringWithFormat:@"%@ ataca com %@: %.2f",nomej2,j2.armas, ataque]];
+                [batalha addObject:[NSString stringWithFormat:@"%@ ataca com %@: %.2f",nomej1,j1.armas, ataque]];
                 NSLog(@"Player 2 ataca com %@: %.2f",[j2 armas], ataque);
                 //[NSThread sleepForTimeInterval:1.0f];
                 ataqueEfet = [j2 sofreAtaque:ataque];
                 j1.vida -=ataqueEfet;
-                [batalha addObject:[NSString stringWithFormat:@"%@ leva de %@: %.2f", nomej1,j2.armas,ataqueEfet]];
+                [batalha addObject:[NSString stringWithFormat:@"%@ leva de %@: %.2f", nomej2,j2.armas,ataqueEfet]];
                 NSLog(@"Player 1 sofre ataque de %@: %.2f",[j1 armas],ataqueEfet);
               //  [NSThread sleepForTimeInterval:1.0f];
-                aux = [NSString stringWithFormat:@"%@ vida: %.2f",nomej1,j1.vida];
+                aux = [NSString stringWithFormat:@"%@ vida: %.2f",nomej2,j2.vida];
                 [batalha addObject:(aux)];
                 NSLog(@"Player 1 vida: %.2f",[j2 vida]);
               //  [NSThread sleepForTimeInterval:1.0f];
