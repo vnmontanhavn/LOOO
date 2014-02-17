@@ -168,12 +168,12 @@ int num = 0;
     NSMutableArray *aux = l1.getlista;
     nome =aux;
     NSString* nums = [NSString stringWithFormat:@"%d", num];
-//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2
-//                                                      target:self
-//                                                    selector:@selector(update)
-//                                                    userInfo:nil
-//                                                     repeats:YES];
-//    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2
+                                                      target:self
+                                                    selector:@selector(update)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    
 
 }
 
@@ -225,14 +225,12 @@ numberOfRowsInComponent:(NSInteger)component
 
 - (IBAction)anima:(id)sender {
    }
-
-
-//-(void) update
-//{
-//    //NSLog(@"oooopss");
-//    [self.pickerView selectRow:num  inComponent:0 animated:YES];
-//    num++;
-//}
+-(void) update
+{
+    //NSLog(@"oooopss");
+    [self.pickerView selectRow:num  inComponent:0 animated:YES];
+    num++;
+}
 
 
 
