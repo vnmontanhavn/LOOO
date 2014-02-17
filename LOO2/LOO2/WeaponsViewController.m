@@ -60,6 +60,7 @@ int qtd = 0;
         if(qtd==0) {
         wepon1player1 = 1;
             theButton.enabled = NO;
+            [_msgArma setText:@"Escolha sua arma secundária"];
         }
         else wepon2player1 =1;
         qtd++;
@@ -75,6 +76,7 @@ int qtd = 0;
         if(qtd==0) {
             wepon1player1 = 4;
             theButton.enabled = NO;
+            [_msgArma setText:@"Escolha sua arma secundária"];
         }
         else wepon2player1 =4;
         qtd++;
@@ -90,6 +92,7 @@ int qtd = 0;
         if(qtd==0) {
             wepon1player1 = 3;
             theButton.enabled = NO;
+            [_msgArma setText:@"Escolha sua arma secundária"];
         }
         else wepon2player1 =3;
         qtd++;
@@ -105,6 +108,7 @@ int qtd = 0;
         if(qtd==0) {
             wepon1player1 = 2;
         theButton.enabled = NO;
+            [_msgArma setText:@"Escolha sua arma secundária"];
         }
         else wepon2player1 =2;
         qtd++;

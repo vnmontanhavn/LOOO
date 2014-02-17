@@ -42,6 +42,9 @@ int num = 0;
     UIImage *img;
     UIImage *img2;
     
+    [_nomeP1 setText:self.nome1];
+    [_nomeP2 setText:self.nome2];
+    
     switch (player1.raca) {
         case 0:
              img = [UIImage imageNamed:@"elfo"];
@@ -172,10 +175,6 @@ int num = 0;
 //                                                     repeats:YES];
 //    
 
-}
-
-
-- (IBAction)animate:(UIButton *)sender {
 }
 
 - (void)viewDidAppear:(BOOL)animated

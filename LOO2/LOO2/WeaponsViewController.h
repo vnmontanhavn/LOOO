@@ -25,6 +25,7 @@
 @property(assign) int racep2;
 @property(assign) NSString *nome1;
 @property(assign) NSString *nome2;
+@property (weak, nonatomic) IBOutlet UILabel *msgArma;
 
 - (IBAction)espada:(id)sender;
 - (IBAction)magia:(id)sender;
