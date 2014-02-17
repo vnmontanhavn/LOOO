@@ -180,19 +180,19 @@
                     break;
                 }
             }
-            [batalha addObject:[NSString stringWithFormat:@"%@ comeca!",nomej1]];
+            [batalha addObject:[NSString stringWithFormat:@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas]]];
             NSLog(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas]);
             //scanf("%d",&arma);
             arma=1;
             if(arma==1)
             {
                 ataque = [j1 ataque];
-                [batalha addObject:[NSString stringWithFormat:@"%@ comeca!",nomej1]];
+                [batalha addObject:[NSString stringWithFormat:@"%@ ataca com %@: %.2f",nomej1,[j1 armap],ataque]];
                 NSLog(@"Player 1 ataca com %@: %.2f",[j1 armap],ataque);
                // [NSThread sleepForTimeInterval:1.0f];
                 ataqueEfet = [j2 sofreAtaque:ataque];
                 j2.vida -=ataqueEfet;
-                [batalha addObject:[NSString stringWithFormat:@"%@ comeca!",nomej1]];
+                [batalha addObject:[NSString stringWithFormat:@"%@ sofre ataque de %@: %.2f",nomej2,[j1 armap], ataqueEfet]];
                 NSLog(@"Player 2 sofre ataque de %@: %.2f",[j1 armap], ataqueEfet);
               //  [NSThread sleepForTimeInterval:1.0f];
                 [batalha addObject:[NSString stringWithFormat:@"%@ vida: %f",j2, j2.vida]];
