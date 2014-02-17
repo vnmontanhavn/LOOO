@@ -14,10 +14,12 @@
 {
     NSString *nomej1;
     NSString *nomej2;
-    NSMutableArray *batalha;;
+    NSMutableArray *batalha;
+    bool teste;
 }
     
 -(void) jogar:(Jogador *) j1 andWith:(Jogador *)j2;
 -(void) setnomes:(NSString *) j1 andWith:(NSString *)j2;
+- (NSMutableArray*) getlista;
 @end
 

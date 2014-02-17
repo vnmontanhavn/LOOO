@@ -16,7 +16,6 @@
 @end
 
 @implementation BatalhaViewController
-@synthesize nome;
 int num = 0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -151,13 +150,15 @@ int num = 0;
     [nome addObject:[ player2 armaPrimaria].nome];
     [nome addObject:[player2 armaSecundaria].nome];
     
+    
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.pickerView reloadAllComponents];
     LeagueOfOrientedObject *l1 = [[LeagueOfOrientedObject alloc] init];
     [l1 setnomes:self.nome1 andWith:self.nome2];
     [l1 jogar:player1 andWith:player2];
-    
+    NSMutableArray *aux = l1.getlista;
+    nome =aux;
     NSString* nums = [NSString stringWithFormat:@"%d", num];
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2
                                                       target:self
@@ -209,7 +210,6 @@ numberOfRowsInComponent:(NSInteger)component
 
 -(NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    //NSLog(@"%@/n",[nome objectAtIndex:row]);
     return [nome objectAtIndex:row];
 }
 
@@ -223,6 +223,7 @@ numberOfRowsInComponent:(NSInteger)component
    }
 -(void) update
 {
+    NSLog(@"oooopss");
     [self.pickerView selectRow:num  inComponent:0 animated:YES];
     num++;
 }
