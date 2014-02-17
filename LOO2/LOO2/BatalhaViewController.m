@@ -234,5 +234,13 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 
+//-(void) update
+//{
+//    //NSLog(@"oooopss");
+//    [self.pickerView selectRow:num  inComponent:0 animated:YES];
+//    num++;
+//}
+
+
 
 @end
