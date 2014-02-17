@@ -36,21 +36,24 @@
     srand(time(NULL));
     int iniciativa1 = rand()%2;
     double ataque;
-    double ataqueEfet;
+    double ataqueEfet =0;
     int arma;
     NSString *aux;
+    NSLog(@"%@ , %@ , %@ , %@",[j1 armap], [j1 armas], [j2 armap], [j2 armas]);
+    NSLog(@"%f, %f",j1.vida, j2.vida);
     if( iniciativa1==0)
     {
     
        // [batalha addObject:(@"%@ comeca!",j1)];
         NSLog(@"Player 1 comeca!");
+        
         // NSLog(@"ataque: %f",[j1 ataque]);
         while (true)
         {
             //[batalha addObject:(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas] )];
             NSLog(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas] );
-            scanf("%d",&arma);
-            
+           // scanf("%d",&arma);
+            arma=1;
             if(arma==1)
             {
                 ataque = [j1 ataque];
@@ -89,7 +92,8 @@
             }
            // [batalha addObject:(@"%@ comeca!",j1)];
             NSLog(@"\np2 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j2 armap], [j2 armas]);
-            scanf("%d",&arma);
+            //scanf("%d",&arma);
+            arma = 1;
             if(arma ==1)
             {
                 ataque = [j2 ataque];
@@ -136,7 +140,8 @@
         {
          // [batalha addObject:(@"%@ comeca!",j1)];
            NSLog(@"\np2 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j2 armap], [j2 armas]);
-            scanf("%d",&arma);
+            //scanf("%d",&arma);
+            arma=1;
             if(arma ==1)
             {
                 ataque = [j2 ataque];
@@ -177,7 +182,8 @@
             }
             [batalha addObject:[NSString stringWithFormat:@"%@ comeca!",j1]];
             NSLog(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas]);
-            scanf("%d",&arma);
+            //scanf("%d",&arma);
+            arma=1;
             if(arma==1)
             {
                 ataque = [j1 ataque];
