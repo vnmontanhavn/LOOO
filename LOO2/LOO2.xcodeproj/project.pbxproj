@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66A25C6518B24AEA0050D549 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A25C6418B24AE50050D549 /* icone.png */; };
+		66A25C6618B24AEB0050D549 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A25C6418B24AE50050D549 /* icone.png */; };
 		7524A42C18ACF04D00587FB3 /* WeaponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */; };
 		7524A42F18ACFB7000587FB3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7524A42E18ACFB7000587FB3 /* MainViewController.m */; };
 		C857150318ACF6C9008BBB7C /* BatalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C857150218ACF6C9008BBB7C /* BatalhaViewController.m */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66A25C6418B24AE50050D549 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone.png; sourceTree = "<group>"; };
 		7524A42A18ACF04D00587FB3 /* WeaponsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponsViewController.h; sourceTree = "<group>"; };
 		7524A42B18ACF04D00587FB3 /* WeaponsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponsViewController.m; sourceTree = "<group>"; };
 		7524A42D18ACFB7000587FB3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		C8E9043B18ACDF2100F3B887 = {
 			isa = PBXGroup;
 			children = (
+				66A25C6418B24AE50050D549 /* icone.png */,
 				C8E9044D18ACDF2100F3B887 /* LOO2 */,
 				C8E9046C18ACDF2100F3B887 /* LOO2Tests */,
 				C8E9044618ACDF2100F3B887 /* Frameworks */,
@@ -285,6 +289,7 @@
 			files = (
 				C8E9046018ACDF2100F3B887 /* Images.xcassets in Resources */,
 				C8E9045218ACDF2100F3B887 /* InfoPlist.strings in Resources */,
+				66A25C6518B24AEA0050D549 /* icone.png in Resources */,
 				C8E9045B18ACDF2100F3B887 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A25C6618B24AEB0050D549 /* icone.png in Resources */,
 				C8E9047118ACDF2100F3B887 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +448,6 @@
 		C8E9047718ACDF2100F3B887 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LOO2/LOO2-Prefix.pch";
@@ -455,7 +460,6 @@
 		C8E9047818ACDF2100F3B887 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LOO2/LOO2-Prefix.pch";
