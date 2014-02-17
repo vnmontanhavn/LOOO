@@ -15,7 +15,7 @@
     NSString *nomej1;
     NSString *nomej2;
     NSMutableArray *batalha;
-    bool teste;
+    //bool teste;
 }
     
 -(void) jogar:(Jogador *) j1 andWith:(Jogador *)j2;
