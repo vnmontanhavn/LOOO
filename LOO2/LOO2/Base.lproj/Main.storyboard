@@ -287,15 +287,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGh-jt-Psx">
+                                <rect key="frame" x="30" y="194" width="263" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Reiniciar Batalha">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reiniciaBatalha:" destination="yYT-Ax-lUm" eventType="touchUpInside" id="etp-oW-PIJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="inimigo" destination="57n-4e-Wux" id="SeF-8e-inS"/>
                         <outlet property="jogador" destination="2ec-fE-A7J" id="QaN-fh-8Iv"/>
+                        <outlet property="labelVS" destination="C9u-3W-zHX" id="HKF-p8-DZ8"/>
                         <outlet property="nomeP1" destination="l1o-V8-voK" id="g2s-gc-13I"/>
                         <outlet property="nomeP2" destination="L54-BC-Zcq" id="siC-n2-od2"/>
                         <outlet property="pickerView" destination="Q6a-Cp-hw0" id="B6f-pZ-8R9"/>
+                        <outlet property="reiniciaBatalha" destination="RGh-jt-Psx" id="K1o-vd-k2C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bif-xl-NP7" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -28,6 +28,9 @@ int num = 0;
     }
     return self;
 }
+- (IBAction)reiniciaBatalha:(id)sender {
+    NSLog(@"Reiniciar");
+}
 
 - (void)viewDidLoad
 {
@@ -35,6 +38,7 @@ int num = 0;
     //cria os jogadores
     player1 = [[Jogador alloc] init];
     player2 = [[Jogador alloc] init];
+    [_reiniciaBatalha setHidden:YES];
     
     //define recas
     player1.raca = self.raceP1;
@@ -230,6 +234,16 @@ numberOfRowsInComponent:(NSInteger)component
     //NSLog(@"oooopss");
     [self.pickerView selectRow:num  inComponent:0 animated:YES];
     num++;
+    
+    if (num == nome.count) {
+        //NSLog(@"acabou");
+        [_jogador setHidden:YES];
+        [_inimigo setHidden:YES];
+        [_nomeP1 setHidden:YES];
+        [_nomeP2 setHidden:YES];
+        [_labelVS setHidden:YES];
+        [_reiniciaBatalha setHidden:NO];
+    }
 }
 
 

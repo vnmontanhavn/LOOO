@@ -32,4 +32,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *inimigo;
 @property (weak, nonatomic) IBOutlet UILabel *nomeP1;
 @property (weak, nonatomic) IBOutlet UILabel *nomeP2;
+@property (weak, nonatomic) IBOutlet UILabel *labelVS;
+@property (weak, nonatomic) IBOutlet UIButton *reiniciaBatalha;
 @end
