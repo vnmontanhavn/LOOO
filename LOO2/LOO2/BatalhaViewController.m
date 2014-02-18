@@ -92,7 +92,7 @@ int num = 0;
         player1.armaPrimaria = [[ArcoeFlecha alloc]initWithflechas:50];
     }
     else  {
-        player1.armaPrimaria = [[Magia alloc]initWithSkill:5];
+        player1.armaPrimaria = [[Magia alloc]initWithSkill:0.1];
     }
     
     //arma 2 player 1
@@ -106,7 +106,7 @@ int num = 0;
         player1.armaSecundaria = [[ArcoeFlecha alloc]initWithflechas:50];
     }
     else  {
-        player1.armaSecundaria = [[Magia alloc]initWithSkill:5];
+        player1.armaSecundaria = [[Magia alloc]initWithSkill:0.1];
     }
     
     //arma 1 player 2
@@ -120,7 +120,7 @@ int num = 0;
         player2.armaPrimaria = [[ArcoeFlecha alloc]initWithflechas:50];
     }
     else  {
-        player2.armaPrimaria = [[Magia alloc]initWithSkill:50];
+        player2.armaPrimaria = [[Magia alloc]initWithSkill:0.1];
     }
     
     
@@ -135,7 +135,7 @@ int num = 0;
         player2.armaSecundaria = [[ArcoeFlecha alloc]initWithflechas:50];
     }
     else  {
-        player2.armaSecundaria = [[Magia alloc]initWithSkill:5];
+        player2.armaSecundaria = [[Magia alloc]initWithSkill:0.1];
     }
     
     NSLog(@"%@",self.nome1);
@@ -148,6 +148,8 @@ int num = 0;
     NSLog(@"%d",player2.raca);
     player1.vida = 100;
     player2.vida=100;
+    player1.forcaescudo = 5;
+    player2.forcaescudo= 7;
     nome = [[NSMutableArray alloc]init];
     //[nome addObject:player1.nome];
     [nome addObject:[self nome1]];
