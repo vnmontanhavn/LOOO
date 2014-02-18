@@ -83,10 +83,10 @@ int num = 0;
     
     //arma1 player 1
     if (self.wep1P1==1) {
-        player1.armaPrimaria = [[Espada alloc] initWithForca:70 andDesgaste:10];
+        player1.armaPrimaria = [[Espada alloc] initWithForca:40 andDesgaste:10];
     }
     else if (self.wep1P1==2) {
-        player1.armaPrimaria = [[Machado alloc]initWithForca:100 andDesgaste:10];
+        player1.armaPrimaria = [[Machado alloc]initWithForca:50 andDesgaste:10];
     }
     else if (self.wep1P1==3) {
         player1.armaPrimaria = [[ArcoeFlecha alloc]initWithflechas:50];
@@ -97,10 +97,10 @@ int num = 0;
     
     //arma 2 player 1
     if (self.wep2P1==1) {
-        player1.armaSecundaria = [[Espada alloc] initWithForca:70 andDesgaste:10];
+        player1.armaSecundaria = [[Espada alloc] initWithForca:40 andDesgaste:10];
     }
     else if (self.wep2P1==2) {
-        player1.armaSecundaria =[[Machado alloc]initWithForca:100 andDesgaste:10];
+        player1.armaSecundaria =[[Machado alloc]initWithForca:50 andDesgaste:10];
     }
     else if (self.wep2P1==3) {
         player1.armaSecundaria = [[ArcoeFlecha alloc]initWithflechas:50];
@@ -111,10 +111,10 @@ int num = 0;
     
     //arma 1 player 2
     if (self.wep1P2==1) {
-        player2.armaPrimaria = [[Espada alloc] initWithForca:70 andDesgaste:10];
+        player2.armaPrimaria = [[Espada alloc] initWithForca:40 andDesgaste:10];
     }
     else if (self.wep1P2==2) {
-        player2.armaPrimaria =[[Machado alloc]initWithForca:100 andDesgaste:10];
+        player2.armaPrimaria =[[Machado alloc]initWithForca:50 andDesgaste:10];
     }
     else if (self.wep1P2==3) {
         player2.armaPrimaria = [[ArcoeFlecha alloc]initWithflechas:50];
@@ -126,10 +126,10 @@ int num = 0;
     
     //arma 2 player 2
     if (self.wep2P2==1) {
-        player2.armaSecundaria = [[Espada alloc] initWithForca:70 andDesgaste:10];
+        player2.armaSecundaria = [[Espada alloc] initWithForca:40 andDesgaste:10];
     }
     else if (self.wep2P2==2) {
-        player2.armaSecundaria =[[Machado alloc]initWithForca:100 andDesgaste:10];
+        player2.armaSecundaria =[[Machado alloc]initWithForca:50 andDesgaste:10];
     }
     else if (self.wep2P2==3) {
         player2.armaSecundaria = [[ArcoeFlecha alloc]initWithflechas:50];

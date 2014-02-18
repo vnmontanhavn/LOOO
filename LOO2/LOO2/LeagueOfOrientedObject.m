@@ -53,7 +53,9 @@
             [batalha addObject:[NSString stringWithFormat:@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",j1.armap, j1.armas ]];
             NSLog(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas] );
            // scanf("%d",&arma);
-            arma=1;
+            arma = 1 + rand() % 2;
+            NSLog(@"ARMA = %d",arma);
+            //arma=1;
             if(arma==1)
             {
                 ataque = [j1 ataque];
@@ -93,7 +95,9 @@
             [batalha addObject:[NSString stringWithFormat:@"\np2 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j2 armap], [j2 armas]]];
             NSLog(@"\np2 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j2 armap], [j2 armas]);
             //scanf("%d",&arma);
-            arma = 1;
+            //arma = 1;
+            arma = 1 + rand() % 2;
+            NSLog(@"ARMA = %d",arma);
             if(arma ==1)
             {
                 ataque = [j2 ataque];
@@ -141,7 +145,9 @@
           [batalha addObject:[NSString stringWithFormat:@"\np2 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j2 armap], [j2 armas]]];
            NSLog(@"\np2 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j2 armap], [j2 armas]);
             //scanf("%d",&arma);
-            arma=1;
+            //arma=1;
+            arma = 1 + rand() % 2;
+            NSLog(@"ARMA = %d",arma);
             if(arma ==1)
             {
                 ataque = [j2 ataque];
@@ -183,7 +189,9 @@
             [batalha addObject:[NSString stringWithFormat:@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas]]];
             NSLog(@"\np1 Escolha a arma que voce deseja usar: \n1-%@\n2-%@",[j1 armap], [j1 armas]);
             //scanf("%d",&arma);
-            arma=1;
+            //arma=1;
+            arma = 1 + rand() % 2;
+            NSLog(@"ARMA = %d",arma);
             if(arma==1)
             {
                 ataque = [j1 ataque];
